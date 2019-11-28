@@ -1,0 +1,33 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "team project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash-sjsu/nodejstut.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "akash jagannathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash-sjsu/nodejstut/issues"
+  },
+  "homepage": "https://github.com/akash-sjsu/nodejstut#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.7.6"
+  }
+}

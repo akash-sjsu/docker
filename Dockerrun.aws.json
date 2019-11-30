@@ -1,0 +1,44 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "volumes": [
+        {
+            "name": "bankapi",
+            "host": {
+                "sourcePath": "/var/app/current/bankapi"
+            }
+        }
+    ],
+    "containerDefinitions": [
+        {
+            "environment": [
+                {
+                    "name": "MONGODB_DATABASE",
+                    "value": "bankapi"
+                }
+            ],
+            "image": "mongo",
+            "memory": 128,
+            "name": "mongo"
+        },
+        {
+            "essential": true,
+            "image": "app",
+            "memory": 250,
+            "name": "app",
+            "mountPoints": [
+                {
+                    "sourceVolume": "app",
+                    "containerPath": "/usr/src/app",
+                    "sourcePath": "",
+                    "readOnly": true
+                }
+            ],
+            "portMappings": [
+                {
+                    "hostPort": 3000,
+                    "containerPort": 3000
+                }
+            ]
+        }
+    ]
+}

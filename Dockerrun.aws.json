@@ -1,14 +1,22 @@
 {
     "AWSEBDockerrunVersion": 2,
-    "volumes": [
-        {
-            "name": "bankapi",
-            "host": {
-                "sourcePath": "/var/app/current/bankapi"
-            }
-        }
-    ],
     "containerDefinitions": [
+      {
+
+          "image": "ajag408/bankapi",
+          "memory": 250,
+          "name": "bank",
+
+          "portMappings": [
+              {
+                  "hostPort": 80,
+                  "containerPort": 3000
+              }
+          ],
+          "links": [
+            "mongo"
+          ]
+      }
         {
             "environment": [
                 {
@@ -20,18 +28,6 @@
             "memory": 128,
             "name": "mongo"
         },
-        {
 
-            "image": "bank",
-            "memory": 250,
-            "name": "bank",
-
-            "portMappings": [
-                {
-                    "hostPort": 3000,
-                    "containerPort": 3000
-                }
-            ]
-        }
     ]
 }

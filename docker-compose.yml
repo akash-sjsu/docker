@@ -2,7 +2,7 @@
 version: "2"
 services:
   app:
-    container_name: app
+    image: ajag408/bankapi
     restart: always
     build: .
     ports:

@@ -22,9 +22,9 @@
         },
         {
 
-            "image": "node",
+            "image": "ajag408/bankapi",
             "memory": 250,
-            "name": "node",
+            "name": "ajag408/bankapi",
 
             "portMappings": [
                 {

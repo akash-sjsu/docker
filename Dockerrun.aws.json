@@ -25,14 +25,7 @@
             "image": "app",
             "memory": 250,
             "name": "app",
-            "mountPoints": [
-                {
-                    "sourceVolume": "app",
-                    "containerPath": "/usr/src/app",
-                    "sourcePath": "",
-                    "readOnly": true
-                }
-            ],
+
             "portMappings": [
                 {
                     "hostPort": 3000,

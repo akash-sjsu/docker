@@ -3,7 +3,7 @@
     "containerDefinitions": [
       {
 
-          "image": "ajag408/bankapi",
+          "image": "ajag408/bankapi:bank",
           "memory": 250,
           "name": "app",
 

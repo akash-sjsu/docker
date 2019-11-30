@@ -27,7 +27,7 @@
             "image": "mongo",
             "memory": 128,
             "name": "mongo"
-        },
+        }
 
     ]
 }

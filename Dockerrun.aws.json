@@ -25,6 +25,14 @@
             "image": "node",
             "memory": 250,
             "name": "node",
+            "mountPoints": [
+                {
+                    "sourceVolume": "node",
+                    "containerPath": "/usr/src/node",
+                    "sourcePath": "",
+                    "readOnly": true
+                }
+            ],
 
             "portMappings": [
                 {

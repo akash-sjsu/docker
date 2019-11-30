@@ -5,7 +5,7 @@
 
           "image": "ajag408/bankapi",
           "memory": 250,
-          "name": "bank",
+          "name": "app",
 
           "portMappings": [
               {
